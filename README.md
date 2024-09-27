@@ -54,4 +54,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Credits
 Harked: Creator of the original plugin idea.
+
 Community Contributors: Thank you to all contributors for their suggestions and improvements.
