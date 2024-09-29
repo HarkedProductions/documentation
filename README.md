@@ -1,58 +1,70 @@
-Documentation for ServerSide Finder
+AntiChatSystem Documentation
+Version: 2.1
+Developer: Harked
+Last Updated: 2024/09/29
 
-ServerSide Finder Plugin
+Table of Contents
 
-Overview
-The ServerSide Finder is a plugin designed to help Roblox developers identify potential server-side scripts and backdoors in their games. This tool scans various services and highlights any suspicious code for further review.
 
-Features
-Advanced Pattern Matching: Utilizes regular expressions to identify potential backdoors and malicious scripts.
 
-Status Indicator: Provides real-time feedback on the search process.
+            Overview
+The AntiChatSystem monitors all in-game chat in real time, detecting inappropriate language, issuing warnings, and applying temporary or permanent bans. Fully customizable and scalable, the system ensures a cleaner chat experience for your game while also sending logs to a Discord webhook for admins to review.
 
-Multilingual Support: Offers translations for multiple languages to cater to a diverse audience. (more soon)
 
-User Manual: Includes a help section to guide users on how to use the plugin effectively.
+            Features
 
-Feedback Submission: Allows users to submit feedback directly, which is sent to a specified Discord webhook.
+Real-time Chat Monitoring
+Warning and Ban System
+Custom Warning/Ban Messages
+Word and Phrase Detection
+Automated Temporary and Permanent Bans
+Dynamic Warning and Ban Durations
+Customizable Violation Thresholds
+Warning Reset System
+Advanced User Whitelisting/Blacklisting
+Logging and Notifications
+User Interface (UI) Integration
+Detailed Logs via Webhooks
+Multi-language Support
+Rate Limiting to Prevent Spam
+Admin Bypass for Testing
+High Scalability for Large Servers
 
-Installation
 
-Download the plugin script.
+          System Setup
+Download Script: Download and insert the AntiChatSystem script into ServerScriptService.
+Connect Chat Service: Use game:GetService("Chat") to ensure all messages are monitored.
+Webhook Setup: Create a Discord webhook, copy the URL, and paste it into the script.
+Configure Word Filter: Edit the word filter in the script to add/remove banned words.
+Whitelist Admins: Add trusted UserIDs to the whitelist section in the script.
+Test: Use an alt account to test, ensuring warnings/bans are issued properly and logs appear in Discord.
 
-Open Roblox Studio and navigate to the "Plugins" section.
 
-Insert the script into your plugin folder.
 
-Restart Roblox Studio to see the plugin in the toolbar.
+          Configuration
 
-Usage
+Customizing Word Filters: Edit the bannedWords array in the script to add or remove inappropriate words.
+Example: local bannedWords = {"badword1", "badword2"}
+Setting Warning/Ban Durations: Edit the variables for warning reset (default 48 hours) and ban length (default 1 hour).
+Modifying Ban Messages: Edit the banMessage variable in the script.
+Example: local banMessage = "🚫Banned by Fatality🚫 You have been banned for 1 hour for chat rule violations."
+Logging: Paste your Discord webhook URL into the script to enable logging.
 
-Click the ServerSide Finder button in the toolbar to open the plugin interface.
 
-Type search in the command input box and hit Enter to start scanning for server-side scripts.
+            FAQs
+Q: Can I change the ban duration?
+A: Yes, adjust the duration in the configuration section.
+Q: How do I customize the word filter?
+A: Add/remove words in the bannedWords array.
+Q: Can I receive real-time notifications of bans?
+A: Yes, set up a Discord webhook for instant logging.
 
-Review the results displayed in the results area.
 
-Provide feedback using the feedback section and click Submit Feedback to send your comments.
 
-Translations
 
-The plugin currently supports English and Spanish.
+      Future Improvements
 
-Troubleshooting
-
-If you encounter issues, ensure that the plugin is correctly installed and that your game has scripts to search through, or contact the developer
-
-Check the output window in Roblox Studio for any error messages.
-
-Contribution
-If you'd like to contribute to the development of the ServerSide Finder plugin, feel free to submit issues or pull requests on the GitHub repository.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Credits
-Harked: Creator of the original plugin idea.
-
-Community Contributors: Thank you to all contributors for their suggestions and improvements.
+7. Future Improvements
+Machine Learning Detection: Adding ML algorithms to detect more advanced chat violations.
+Role-Based Bans: Allowing different ban types (e.g., mute vs. kick).
+Appeal System: Let players appeal bans automatically via a form.
