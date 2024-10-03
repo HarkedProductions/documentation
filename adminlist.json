@@ -1,14 +1,14 @@
 {
-    "admins": [
+    "users": [
         {
-            "userId": 379301956,
-            "username": "lockbit",
-            "password": "owner"
+            "UserID": 379301956,
+            "username": "Admin",
+            "password": "Admin"
         },
         {
-            "userId": 987654321,
-            "username": "lockbit",
-            "password": "lockbit"
+            "UserID": 987654321,
+            "username": "ModTwo",
+            "password": "ModPassword"
         }
     ]
 }
