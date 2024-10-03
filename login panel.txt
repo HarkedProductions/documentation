@@ -2,24 +2,24 @@
 -- Version: 3.2
 
 -- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
-local textbuttpm = Instance.new("TextButton")
+local LoginButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local textbuttpm_2 = Instance.new("TextButton")
+local ExitButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local UsernameLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local PasswordLabel = Instance.new("TextLabel")
+local UsernameBox = Instance.new("TextBox") -- Added TextBox for username input
+local PasswordBox = Instance.new("TextBox") -- Added TextBox for password input
 local Frame_3 = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local Frame_4 = Instance.new("Frame")
 local UIGradient_2 = Instance.new("UIGradient")
 
 --Properties:
-
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -39,59 +39,84 @@ Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.13415575, 0, 0.298795193, 0)
 Frame_2.Size = UDim2.new(0, 399, 0, 321)
 
-textbuttpm.Name = "textbuttpm"
-textbuttpm.Parent = Frame_2
-textbuttpm.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-textbuttpm.BorderColor3 = Color3.fromRGB(246, 255, 71)
-textbuttpm.BorderSizePixel = 0
-textbuttpm.Position = UDim2.new(0.300751865, 0, 0.626168251, 0)
-textbuttpm.Size = UDim2.new(0, 145, 0, 27)
-textbuttpm.Font = Enum.Font.FredokaOne
-textbuttpm.Text = "Login"
-textbuttpm.TextColor3 = Color3.fromRGB(255, 255, 255)
-textbuttpm.TextSize = 23.000
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = Frame_2
+LoginButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+LoginButton.BorderColor3 = Color3.fromRGB(246, 255, 71)
+LoginButton.BorderSizePixel = 0
+LoginButton.Position = UDim2.new(0.300751865, 0, 0.626168251, 0)
+LoginButton.Size = UDim2.new(0, 145, 0, 27)
+LoginButton.Font = Enum.Font.FredokaOne
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextSize = 23.000
 
-UICorner.Parent = textbuttpm
+UICorner.Parent = LoginButton
 
-textbuttpm_2.Name = "textbuttpm"
-textbuttpm_2.Parent = Frame_2
-textbuttpm_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-textbuttpm_2.BorderColor3 = Color3.fromRGB(246, 255, 71)
-textbuttpm_2.BorderSizePixel = 0
-textbuttpm_2.Position = UDim2.new(0.300751865, 0, 0.744548261, 0)
-textbuttpm_2.Size = UDim2.new(0, 145, 0, 27)
-textbuttpm_2.Font = Enum.Font.FredokaOne
-textbuttpm_2.Text = "Exit"
-textbuttpm_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-textbuttpm_2.TextSize = 27.000
+ExitButton.Name = "ExitButton"
+ExitButton.Parent = Frame_2
+ExitButton.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ExitButton.BorderColor3 = Color3.fromRGB(246, 255, 71)
+ExitButton.BorderSizePixel = 0
+ExitButton.Position = UDim2.new(0.300751865, 0, 0.744548261, 0)
+ExitButton.Size = UDim2.new(0, 145, 0, 27)
+ExitButton.Font = Enum.Font.FredokaOne
+ExitButton.Text = "Exit"
+ExitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExitButton.TextSize = 27.000
 
-UICorner_2.Parent = textbuttpm_2
+UICorner_2.Parent = ExitButton
 
-TextLabel.Parent = Frame_2
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 0.900
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.26566416, 0, 0.258566976, 0)
-TextLabel.Size = UDim2.new(0, 173, 0, 38)
-TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "Username"
-TextLabel.TextColor3 = Color3.fromRGB(212, 212, 212)
-TextLabel.TextSize = 30.000
+UsernameLabel.Parent = Frame_2
+UsernameLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UsernameLabel.BackgroundTransparency = 0.900
+UsernameLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UsernameLabel.BorderSizePixel = 0
+UsernameLabel.Position = UDim2.new(0.26566416, 0, 0.258566976, 0)
+UsernameLabel.Size = UDim2.new(0, 173, 0, 38)
+UsernameLabel.Font = Enum.Font.FredokaOne
+UsernameLabel.Text = "Username"
+UsernameLabel.TextColor3 = Color3.fromRGB(212, 212, 212)
+UsernameLabel.TextSize = 30.000
 
 UICorner_3.Parent = Frame_2
 
-TextLabel_2.Parent = Frame_2
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 0.900
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.26566416, 0, 0.411214948, 0)
-TextLabel_2.Size = UDim2.new(0, 173, 0, 38)
-TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "Password"
-TextLabel_2.TextColor3 = Color3.fromRGB(212, 212, 212)
-TextLabel_2.TextSize = 30.000
+PasswordLabel.Parent = Frame_2
+PasswordLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PasswordLabel.BackgroundTransparency = 0.900
+PasswordLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PasswordLabel.BorderSizePixel = 0
+PasswordLabel.Position = UDim2.new(0.26566416, 0, 0.411214948, 0)
+PasswordLabel.Size = UDim2.new(0, 173, 0, 38)
+PasswordLabel.Font = Enum.Font.FredokaOne
+PasswordLabel.Text = "Password"
+PasswordLabel.TextColor3 = Color3.fromRGB(212, 212, 212)
+PasswordLabel.TextSize = 30.000
+
+-- Username Input Box
+UsernameBox.Name = "UsernameBox"
+UsernameBox.Parent = Frame_2
+UsernameBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UsernameBox.BackgroundTransparency = 0.5
+UsernameBox.Position = UDim2.new(0.26566416, 0, 0.3, 0)
+UsernameBox.Size = UDim2.new(0, 173, 0, 38)
+UsernameBox.Font = Enum.Font.FredokaOne
+UsernameBox.PlaceholderText = "Enter your username"
+UsernameBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+UsernameBox.TextSize = 20.000
+
+-- Password Input Box
+PasswordBox.Name = "PasswordBox"
+PasswordBox.Parent = Frame_2
+PasswordBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PasswordBox.BackgroundTransparency = 0.5
+PasswordBox.Position = UDim2.new(0.26566416, 0, 0.45, 0)
+PasswordBox.Size = UDim2.new(0, 173, 0, 38)
+PasswordBox.Font = Enum.Font.FredokaOne
+PasswordBox.PlaceholderText = "Enter your password"
+PasswordBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+PasswordBox.TextSize = 20.000
+PasswordBox.TextTransparency = 0 -- Make sure the text is visible
 
 Frame_3.Parent = ScreenGui
 Frame_3.BackgroundColor3 = Color3.fromRGB(53, 255, 60)
