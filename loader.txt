@@ -1,0 +1,199 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local textbuttpm = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local textbuttpm_2 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local textbuttpm_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local textbuttpm_4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(53, 255, 60)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.543143272, 0, 0.297738701, 0)
+Frame.Size = UDim2.new(0, 399, 0, 2)
+
+UIGradient.Parent = Frame
+
+Frame_2.Parent = ScreenGui
+Frame_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.409090906, 0, -0.0213567838, 0)
+Frame_2.Size = UDim2.new(0, 1297, 0, 830)
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frame_3.BackgroundTransparency = 0.100
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0855821148, 0, 0.251807243, 0)
+Frame_3.Size = UDim2.new(0, 579, 0, 411)
+
+textbuttpm.Name = "textbuttpm"
+textbuttpm.Parent = Frame_3
+textbuttpm.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+textbuttpm.BorderColor3 = Color3.fromRGB(246, 255, 71)
+textbuttpm.BorderSizePixel = 0
+textbuttpm.Position = UDim2.new(0.0123234093, 0, 0.601837397, 0)
+textbuttpm.Size = UDim2.new(0, 565, 0, 155)
+textbuttpm.Font = Enum.Font.FredokaOne
+textbuttpm.Text = ""
+textbuttpm.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbuttpm.TextSize = 23.000
+
+UICorner.Parent = textbuttpm
+
+textbuttpm_2.Name = "textbuttpm"
+textbuttpm_2.Parent = Frame_3
+textbuttpm_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+textbuttpm_2.BorderColor3 = Color3.fromRGB(246, 255, 71)
+textbuttpm_2.BorderSizePixel = 0
+textbuttpm_2.Position = UDim2.new(0.0105963992, 0, 0.525570154, 0)
+textbuttpm_2.Size = UDim2.new(0, 98, 0, 24)
+textbuttpm_2.Font = Enum.Font.FredokaOne
+textbuttpm_2.Text = "Status"
+textbuttpm_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbuttpm_2.TextSize = 27.000
+
+UICorner_2.Parent = textbuttpm_2
+
+UICorner_3.Parent = Frame_3
+
+textbuttpm_3.Name = "textbuttpm"
+textbuttpm_3.Parent = Frame_3
+textbuttpm_3.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+textbuttpm_3.BackgroundTransparency = 0.400
+textbuttpm_3.BorderColor3 = Color3.fromRGB(246, 255, 71)
+textbuttpm_3.BorderSizePixel = 0
+textbuttpm_3.Position = UDim2.new(0.608178318, 0, 0.0349274054, 0)
+textbuttpm_3.Size = UDim2.new(0, 217, 0, 109)
+textbuttpm_3.Font = Enum.Font.FredokaOne
+textbuttpm_3.Text = ""
+textbuttpm_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbuttpm_3.TextSize = 23.000
+
+UICorner_4.Parent = textbuttpm_3
+
+TextLabel.Parent = Frame_3
+TextLabel.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.642175436, 0, 0.173408821, 0)
+TextLabel.Size = UDim2.new(0, 178, 0, 42)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "EXIT"
+TextLabel.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel.TextSize = 30.000
+
+TextLabel_2.Parent = Frame_3
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.642175436, 0, 0.0590535924, 0)
+TextLabel_2.Size = UDim2.new(0, 178, 0, 42)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "LOAD"
+TextLabel_2.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel_2.TextSize = 30.000
+
+TextLabel_3.Parent = Frame_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0117782038, 0, 0.601632416, 0)
+TextLabel_3.Size = UDim2.new(0, 151, 0, 49)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Welcome, Admin!"
+TextLabel_3.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel_3.TextSize = 20.000
+
+TextLabel_4.Parent = Frame_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.0365810357, 0, 0.655160427, 0)
+TextLabel_4.Size = UDim2.new(0, 151, 0, 49)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Loaded..."
+TextLabel_4.TextColor3 = Color3.fromRGB(64, 162, 47)
+TextLabel_4.TextSize = 20.000
+
+textbuttpm_4.Name = "textbuttpm"
+textbuttpm_4.Parent = Frame_3
+textbuttpm_4.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+textbuttpm_4.BorderColor3 = Color3.fromRGB(246, 255, 71)
+textbuttpm_4.BorderSizePixel = 0
+textbuttpm_4.Position = UDim2.new(0.0123234093, 0, 0.0397935845, 0)
+textbuttpm_4.Size = UDim2.new(0, 320, 0, 150)
+textbuttpm_4.Font = Enum.Font.FredokaOne
+textbuttpm_4.Text = ""
+textbuttpm_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbuttpm_4.TextSize = 23.000
+
+UICorner_5.Parent = textbuttpm_4
+
+TextLabel_5.Parent = Frame_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextLabel_5.BackgroundTransparency = 0.400
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.124352328, 0, 0.0517540984, 0)
+TextLabel_5.Size = UDim2.new(0, 189, 0, 44)
+TextLabel_5.Font = Enum.Font.FredokaOne
+TextLabel_5.Text = "Fatality Admin Panel!"
+TextLabel_5.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel_5.TextSize = 20.000
+
+UICorner_6.Parent = TextLabel_5
+
+ImageLabel.Parent = Frame_3
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 0.800
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0276338514, 0, 0.053527981, 0)
+ImageLabel.Size = UDim2.new(0, 46, 0, 44)
+ImageLabel.Image = "rbxassetid://96547030452223"
+ImageLabel.ImageTransparency = 0.600
+
+UICorner_7.Parent = ImageLabel
+
+Frame_4.Parent = ScreenGui
+Frame_4.BackgroundColor3 = Color3.fromRGB(53, 255, 60)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.494607091, 0, 0.256281406, 0)
+Frame_4.Size = UDim2.new(0, 579, 0, 2)
+
+UIGradient_2.Parent = Frame_4
