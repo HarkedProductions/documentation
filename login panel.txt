@@ -1,0 +1,112 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local textbuttpm = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local textbuttpm_2 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Frame_4 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, -0.0314070359, 0)
+Frame.Size = UDim2.new(0, 1297, 0, 830)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frame_2.BackgroundTransparency = 0.100
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.13415575, 0, 0.298795193, 0)
+Frame_2.Size = UDim2.new(0, 399, 0, 321)
+
+textbuttpm.Name = "textbuttpm"
+textbuttpm.Parent = Frame_2
+textbuttpm.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+textbuttpm.BorderColor3 = Color3.fromRGB(246, 255, 71)
+textbuttpm.BorderSizePixel = 0
+textbuttpm.Position = UDim2.new(0.300751865, 0, 0.626168251, 0)
+textbuttpm.Size = UDim2.new(0, 145, 0, 27)
+textbuttpm.Font = Enum.Font.FredokaOne
+textbuttpm.Text = "Login"
+textbuttpm.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbuttpm.TextSize = 23.000
+
+UICorner.Parent = textbuttpm
+
+textbuttpm_2.Name = "textbuttpm"
+textbuttpm_2.Parent = Frame_2
+textbuttpm_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+textbuttpm_2.BorderColor3 = Color3.fromRGB(246, 255, 71)
+textbuttpm_2.BorderSizePixel = 0
+textbuttpm_2.Position = UDim2.new(0.300751865, 0, 0.744548261, 0)
+textbuttpm_2.Size = UDim2.new(0, 145, 0, 27)
+textbuttpm_2.Font = Enum.Font.FredokaOne
+textbuttpm_2.Text = "Exit"
+textbuttpm_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbuttpm_2.TextSize = 27.000
+
+UICorner_2.Parent = textbuttpm_2
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.900
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.26566416, 0, 0.258566976, 0)
+TextLabel.Size = UDim2.new(0, 173, 0, 38)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Username"
+TextLabel.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel.TextSize = 30.000
+
+UICorner_3.Parent = Frame_2
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 0.900
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.26566416, 0, 0.411214948, 0)
+TextLabel_2.Size = UDim2.new(0, 173, 0, 38)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Password"
+TextLabel_2.TextColor3 = Color3.fromRGB(212, 212, 212)
+TextLabel_2.TextSize = 30.000
+
+Frame_3.Parent = ScreenGui
+Frame_3.BackgroundColor3 = Color3.fromRGB(53, 255, 60)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.134052381, 0, 0.287688434, 0)
+Frame_3.Size = UDim2.new(0, 399, 0, 2)
+
+UIGradient.Parent = Frame_3
+
+Frame_4.Parent = ScreenGui
+Frame_4.BackgroundColor3 = Color3.fromRGB(53, 255, 60)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.134052381, 0, 0.287688434, 0)
+Frame_4.Size = UDim2.new(0, 399, 0, 2)
+
+UIGradient_2.Parent = Frame_4
