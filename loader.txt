@@ -171,7 +171,7 @@ TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Position = UDim2.new(0.124352328, 0, 0.0517540984, 0)
 TextLabel_5.Size = UDim2.new(0, 189, 0, 44)
 TextLabel_5.Font = Enum.Font.FredokaOne
-TextLabel_5.Text = "Fatality Admin Panel!"
+TextLabel_5.Text = "lockbit troll panel"
 TextLabel_5.TextColor3 = Color3.fromRGB(212, 212, 212)
 TextLabel_5.TextSize = 20.000
 
