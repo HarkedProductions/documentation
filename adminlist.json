@@ -1,4 +1,14 @@
 {
-  "379301956": { "username": "lockbit", "password": "Admin" },
-  "123456789": { "username": "Mod1", "password": "Secret987" }
+  "admins": [
+    {
+      "roblox_uid": "379301956",
+      "username": "lockbit",
+      "password": "admin"
+    },
+    {
+      "roblox_uid": "987654321",
+      "username": "Admin2",
+      "password": "SecurePass!"
+    }
+  ]
 }
