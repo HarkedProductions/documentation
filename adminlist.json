@@ -1,14 +1,7 @@
 {
-    "users": [
-        {
-            "UserID": 379301956,
-            "username": "Admin",
-            "password": "Admin"
-        },
-        {
-            "UserID": 987654321,
-            "username": "ModTwo",
-            "password": "ModPassword"
-        }
-    ]
+  "whitelistedAdmins": [
+    379301956,
+    1609141025,
+    1234567890
+  ]
 }
